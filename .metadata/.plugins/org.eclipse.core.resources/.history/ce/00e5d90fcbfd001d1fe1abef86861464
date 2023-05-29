@@ -1,0 +1,20 @@
+package step01class;
+
+public class DisneyWorld3 {
+
+	public static void main(String[] args) {
+		// jerry 생성, 나이 73, 이름은  제리, 주소는 뉴욕시
+		Mouse jerry = new Mouse();
+		
+		jerry.name = "jerry";
+		jerry.age = 73;
+		jerry.country = "NewYork";
+		
+		// 매개변수가 있는 생성자를 작성
+		Mouse mickey = new Mouse("미키마우스", "미국", 85, "무교", "폴로리다주");
+	
+		
+		
+	}
+
+}

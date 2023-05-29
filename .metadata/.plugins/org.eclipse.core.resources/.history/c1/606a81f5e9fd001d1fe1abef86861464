@@ -1,0 +1,55 @@
+package Test;
+
+public class Teacher {
+	
+	String name;
+	byte age;
+	boolean isFemale;
+	double height;
+	double weight;
+	String address;
+	String university;
+	String career;
+	int payPerHour;
+	String bestPart;
+	boolean isWorking;
+	
+	
+	public Teacher(String name, byte age, boolean isFemale, double height, double weight, String address,
+			String university, String career, int payPerHour, String bestPart, boolean isWorking) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.isFemale = isFemale;
+		this.height = height;
+		this.weight = weight;
+		this.address = address;
+		this.university = university;
+		this.career = career;
+		this.payPerHour = payPerHour;
+		this.bestPart = bestPart;
+		this.isWorking = isWorking;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Teacher [name=" + name + ", age=" + age + ", isFemale=" + isFemale + ", height=" + height + ", weight="
+				+ weight + ", address=" + address + ", university=" + university + ", career=" + career
+				+ ", payPerHour=" + payPerHour + ", bestPart=" + bestPart + "]";
+	}
+	
+	public void isYoungPerson() {
+		if (this.age == 0) {
+			System.out.println("나이가 설정되지 않았습니다");
+			return;
+		} else if (this.age <= 31) {
+			System.out.println("당신은 젊은이");
+		} else {
+			System.out.println("당신은 늙은이");
+		}
+	}
+	
+	
+
+}

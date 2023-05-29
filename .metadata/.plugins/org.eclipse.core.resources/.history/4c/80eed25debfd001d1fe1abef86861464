@@ -1,0 +1,169 @@
+package Test;
+
+public class Teacher {
+	
+	private String name;
+	private byte age;
+	private boolean isFemale;
+	private double height;
+	private double weight;
+	private String address;
+	private String university;
+	private String career;
+	private int payPerHour;
+	private String bestPart;
+	private boolean isWorking;
+	
+	
+	public Teacher(String name, byte age, boolean isFemale, double height, double weight, String address,
+			String university, String career, int payPerHour, String bestPart, boolean isWorking) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.isFemale = isFemale;
+		this.height = height;
+		this.weight = weight;
+		this.address = address;
+		this.university = university;
+		this.career = career;
+		this.payPerHour = payPerHour;
+		this.bestPart = bestPart;
+		this.isWorking = isWorking;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Teacher [name=" + name + ", age=" + age + ", isFemale=" + isFemale + ", height=" + height + ", weight="
+				+ weight + ", address=" + address + ", university=" + university + ", career=" + career
+				+ ", payPerHour=" + payPerHour + ", bestPart=" + bestPart + "]";
+	}
+	
+	private void isYoungPerson() {
+		if (this.age == 0) {
+			System.out.println("나이가 설정되지 않았습니다");
+			return;
+		} else if (this.age <= 31) {
+			System.out.println("원하는 선생님은" + this.age +"살 이군요! -> 대학생");
+		} else {
+			System.out.printf("원하는 선생님은  %d살 이군요! -> 고인물", this.age);
+		}
+	}
+	
+	public boolean matching(String wantSubject, String wantAddress, int payPerHour) {
+		
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public byte getAge() {
+		return age;
+	}
+
+
+	public void setAge(byte age) {
+		this.age = age;
+	}
+
+
+	public boolean isFemale() {
+		return isFemale;
+	}
+
+
+	public void setFemale(boolean isFemale) {
+		this.isFemale = isFemale;
+	}
+
+
+	public double getHeight() {
+		return height;
+	}
+
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+
+	public double getWeight() {
+		return weight;
+	}
+
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	public String getUniversity() {
+		return university;
+	}
+
+
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+
+
+	public String getCareer() {
+		return career;
+	}
+
+
+	public void setCareer(String career) {
+		this.career = career;
+	}
+
+
+	public int getPayPerHour() {
+		return payPerHour;
+	}
+
+
+	public void setPayPerHour(int payPerHour) {
+		this.payPerHour = payPerHour;
+	}
+
+
+	public String getBestPart() {
+		return bestPart;
+	}
+
+
+	public void setBestPart(String bestPart) {
+		this.bestPart = bestPart;
+	}
+
+
+	public boolean isWorking() {
+		return isWorking;
+	}
+
+
+	public void setWorking(boolean isWorking) {
+		this.isWorking = isWorking;
+	}
+	
+	
+
+}

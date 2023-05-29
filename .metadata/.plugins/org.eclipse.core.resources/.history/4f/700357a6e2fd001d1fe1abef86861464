@@ -1,0 +1,9 @@
+package step04settergetter;
+
+public class Mouse2 {
+	private String color;
+	
+	public Mouse2(String color) {
+		this.color = color;
+	}
+}

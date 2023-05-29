@@ -1,0 +1,234 @@
+package Test;
+
+public class Teacher {
+	
+	private String name;
+	private byte age;
+	private String gender;
+	private double height;
+	private double weight;
+	private String address;
+	private String university;
+	private int career;
+	private int payPerHour;
+	private String bestPart;
+	private boolean isWorking;
+	
+	
+	public Teacher(String name, byte age, String gender, double height, double weight, String address,
+			String university, int career, int payPerHour, String bestPart, boolean isWorking) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.height = height;
+		this.weight = weight;
+		this.address = address;
+		this.university = university;
+		this.career = career;
+		this.payPerHour = payPerHour;
+		this.bestPart = bestPart;
+		this.isWorking = isWorking;
+	}
+
+
+	
+	private int isYoungPerson(int wantAge) {
+		if (wantAge == 0) {
+			System.out.println("나이가 설정되지 않았습니다");
+			return 0;
+		} else if (this.age <= wantAge) {
+			return 20;
+		} else {
+			return 0;
+		}
+	}
+	
+	private int WhatGender(String gender) {
+		if (gender == null) {
+			System.out.println("성별이 설정되지 않았습니다");
+			return 0;
+		} else if (this.gender == gender) {
+			return 20;
+		} else {
+			return 0;
+		}
+	}
+	
+	private int isBest(String wantSubject) {
+		if (wantSubject == null) {
+			System.out.println("과목이 설정되지 않았습니다");
+			return 0;
+		} else if (this.bestPart == wantSubject) {
+			return 20;
+		} else {
+			return 0;
+		}
+	}
+	
+	private int isAddress(String wantAddress) {
+		if (wantAddress == null) {
+			System.out.println("지역이 설정되지 않았습니다");
+			return 0;
+		} else if (this.address == wantAddress) {
+			return 20;
+		} else {
+			return 0;
+		}
+	}
+	
+	private int isPay(int payPerHour) {
+		if (payPerHour == 0) {
+			System.out.println("시급이 설정되지 않았습니다");
+			return 0;
+		} else if (this.payPerHour <= payPerHour) {
+			return 20;
+		} else {
+			return 0;
+		}
+	}
+	
+	public void matching(int wantAge, String gender, String wantSubject, String wantAddress, int payPerHour) {
+		int total = 0;
+		
+		total += isYoungPerson(wantAge);
+		System.out.println(total);
+		total += WhatGender(gender);
+		System.out.println(total);
+		total += isBest(wantSubject);
+		System.out.println(total);
+		total += isAddress(wantAddress);
+		System.out.println(total);
+		total += isPay(payPerHour);
+		System.out.println(total);
+		
+		if (total >= 60) {
+			System.out.println("매칭되었습니다");
+		}else {
+			System.out.println("매칭되지 않았습니다");
+		}
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public byte getAge() {
+		return age;
+	}
+
+
+	public void setAge(byte age) {
+		this.age = age;
+	}
+
+
+	public String getGender() {
+		return gender;
+	}
+
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
+	public double getHeight() {
+		return height;
+	}
+
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+
+	public double getWeight() {
+		return weight;
+	}
+
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	public String getUniversity() {
+		return university;
+	}
+
+
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+
+
+	public int getCareer() {
+		return career;
+	}
+
+
+	public void setCareer(int career) {
+		this.career = career;
+	}
+
+
+	public int getPayPerHour() {
+		return payPerHour;
+	}
+
+
+	public void setPayPerHour(int payPerHour) {
+		this.payPerHour = payPerHour;
+	}
+
+
+	public String getBestPart() {
+		return bestPart;
+	}
+
+
+	public void setBestPart(String bestPart) {
+		this.bestPart = bestPart;
+	}
+
+
+	public boolean isWorking() {
+		return isWorking;
+	}
+
+
+	public void setWorking(boolean isWorking) {
+		this.isWorking = isWorking;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Teacher [name=" + name + ", age=" + age + ", gender=" + gender + ", height=" + height + ", weight="
+				+ weight + ", address=" + address + ", university=" + university + ", career=" + career
+				+ ", payPerHour=" + payPerHour + ", bestPart=" + bestPart + ", isWorking=" + isWorking + "]";
+	}
+	
+	
+	
+
+}

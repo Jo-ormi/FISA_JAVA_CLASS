@@ -1,0 +1,22 @@
+package baseball;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class InputNumber {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		 
+        // 입력 데이터 읽기
+        String str = reader.readLine();  // Hi Anna
+        
+        if (str == null || str.length() < 3) {
+        	 throw new IllegalArgumentException("잘못된 값을 입력했습니다");
+        	 System.exit(0);
+        }
+
+	}
+
+}

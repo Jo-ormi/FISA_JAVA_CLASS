@@ -1,0 +1,24 @@
+package step04settergetter;
+
+public class Mouse2 {
+	private String color;
+
+	public Mouse2(String color) {
+		this.color = color;
+	}
+
+	// 일반 메서드
+	// 네이밍 규칙: setter 메서드 = set + 필드명 (카멜 케이스)
+	public void setColor(String color) {
+		// 로직을 작성할 수 있는 부분
+		if (color == "white") {
+			System.out.println("너 누구야!!");
+			return;
+		}
+		this.color = color;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+}

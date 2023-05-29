@@ -1,0 +1,18 @@
+package step01class;
+
+public class DisneyWorld2 {
+
+	public static void main(String[] args) {
+		Mouse jerry = new Mouse();
+		
+		jerry.name = "제리";
+		jerry.age = 82;
+		
+		
+		
+		Mouse mokey = new Mouse(15);
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package step04settergetter;
+
+public class MouseTest {
+
+	public static void main(String[] args) {
+		// 검은색 미키 마우스 생성
+		Mouse mickey = new Mouse("black");
+		
+		// 지브리 직원이 디즈니에 침투
+		mickey.color = "white";
+		System.out.println(mickey.color);
+	}
+
+}

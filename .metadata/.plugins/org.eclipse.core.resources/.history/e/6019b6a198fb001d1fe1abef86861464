@@ -1,0 +1,14 @@
+package step02step02datatypes;
+
+// 자주색으로 작성된 단어들은 키워드
+public class Basic {
+	public static void main(String[] args) {
+		//1. 값의 타입
+		
+		int apples = 7;
+		float eyesight = 1.5f;
+		char initialLetter = 'W';
+		String name = "yoo";
+	}
+
+}

@@ -1,0 +1,45 @@
+package Test;
+
+public class Teacher {
+	
+	String name;
+	byte age;
+	boolean isFemale;
+	double height;
+	double weight;
+	String address;
+	String university;
+	String career;
+	int payPerHour;
+	String bestPart;
+	boolean isWorking;
+	
+	
+	public Teacher(String name, int age, boolean isFemale, double height, double weight, String address,
+			String university, String career, int payPerHour, String bestPart) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.isFemale = isFemale;
+		this.height = height;
+		this.weight = weight;
+		this.address = address;
+		this.university = university;
+		this.career = career;
+		this.payPerHour = payPerHour;
+		this.bestPart = bestPart;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Teacher [name=" + name + ", age=" + age + ", isFemale=" + isFemale + ", height=" + height + ", weight="
+				+ weight + ", address=" + address + ", university=" + university + ", career=" + career
+				+ ", payPerHour=" + payPerHour + ", bestPart=" + bestPart + "]";
+	}
+	
+	public 
+	
+	
+
+}

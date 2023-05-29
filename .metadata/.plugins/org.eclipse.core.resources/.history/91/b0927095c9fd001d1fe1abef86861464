@@ -1,0 +1,33 @@
+package step01class;
+
+public class Mouse {
+
+	// 일반적으로 필드, 메서드 순으로 작성
+
+	// 멤버 필드
+	String name;
+	String country;
+	int age;
+	String religion;
+	String address;
+
+	// 멤버 메서드
+	void sing() {
+		System.out.println("찍찍");
+		System.out.println(name + " 찍찍");
+	}
+
+	// 기본 생성자
+	// 생성자 이름은 클래스명과 동일해야함
+	public Mouse() {
+		System.out.println("defalut constructor called");
+	}
+
+	// 매개변수가 있는 생성자
+	// 생성자 이름은 클래스명과 동일해야함
+	public Mouse(int age) {
+			System.out.println(thist);
+			this.age = age;
+		}
+
+}

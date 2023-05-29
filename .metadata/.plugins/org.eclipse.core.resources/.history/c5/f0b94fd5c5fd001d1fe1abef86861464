@@ -1,0 +1,12 @@
+package step01class;
+
+public class DisneyWorld {
+
+	public static void main(String[] args) {
+		// 미키 마우스 생성
+		// 참조 타입(Mouse) 참조변수 = new 참조타입();
+		Mouse mickey = new Mouse();
+
+	}
+
+}

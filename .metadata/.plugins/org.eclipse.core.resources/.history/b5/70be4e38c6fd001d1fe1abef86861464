@@ -1,0 +1,19 @@
+package step01class;
+
+public class Mouse {
+
+	public static void main(String[] args) {
+		// 일반적으로 필드, 메서드 순으로 작성
+		
+		// 멤버 필드
+		String name;
+		String country;
+		int age;
+		String religion;
+		String address;
+		
+		// 멤버 메서드
+
+	}
+
+}
